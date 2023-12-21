@@ -1,0 +1,28 @@
+.circle
+{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom, red, blue); /* Начальная градиентная заливка */
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.circle:hover
+{
+    animation: colorChange 1s infinite alternate;
+}
+@keyframes colorChange {
+    0% {
+        background-position: top; /* Начальная позиция градиента (сверху) */
+    }
+    100% {
+        background-position: bottom; /* Конечная позиция градиента (снизу) */
+    }
+}

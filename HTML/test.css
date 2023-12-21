@@ -1,0 +1,20 @@
+.container
+{ position: relative;
+    background: #4a9266;
+    width: 30%;
+    padding: 15% 0;
+    border-radius: 50%;
+    margin: 10% auto;
+    font: 4.5vmin monospace;
+}
+.container b {
+     position: absolute;
+     left: 50%; /* все буквы ставим в одну точку*/
+     width: 0; /* убираем отступ */
+}
+.container b:nth-of-type(-n+6) {
+    bottom: 50%; /* отступ от центра по радиусу */
+    -ms-transform-origin: 0% 100%;
+    -webkit-transform-origin: 0% 100%; transform-origin: 0% 100%;
+    padding-bottom: 50%; /* отступ от центра круга */
+}
