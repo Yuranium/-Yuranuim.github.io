@@ -1,0 +1,211 @@
+.star
+{
+    display: inline-block;
+    transition: transform 0.3s ease;
+    transform-origin: center;
+    justify-self: start;
+    margin-left: 30px;
+}
+.star:hover
+{
+    transform: rotate(145deg);
+}
+header
+{
+    transition: top 0.4s ease;
+    position: fixed; /* Фиксированное позиционирование */
+    top: 0; /* Закрепляем блок вверху страницы */
+    width: 100%; /* Занимает всю ширину экрана */
+    margin: 0;
+    padding: 10px 0; /* Добавляем внутренние отступы сверху и снизу */
+    text-align: center;
+    z-index: 100;
+    background: rgb(33,71,145);
+    background: linear-gradient(18deg, rgba(33,71,145,1) 14%, rgba(73,159,196,1) 50%, rgba(141,144,209,1) 100%);
+}
+header nav p
+{
+    display: inline-block;
+    margin: 0;
+    width: 60px;
+    height: 60px;
+    margin-right: 30px;
+}
+header nav p img
+{
+    width: 60px;
+    height: 60px;
+}
+header nav ul li
+{
+    position: relative;
+    float: left;
+    padding-left: 13px;
+    padding-right: 13px;
+}
+.navigation
+{
+    display: flex;
+    justify-content: center;
+    background-color: #293c6a;
+    border-radius: 50px;
+    box-shadow: 1px 5px 10px -5px black;
+    text-align: center;
+    align-items: center;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+.navigation ul li ul
+{
+    position: absolute;
+    left: 0;
+    display: none;
+}
+.navigation ul li ul li
+{
+    width: 110%;
+    padding: 10px;
+    background-color: #3a6a86;
+    /*background: linear-gradient(40deg, #8b9a9f 0, #314db9 66%);*/
+}
+.navigation li > ul li
+{
+    border: 1px solid #2f3138;
+}
+.navigation ul li:hover > ul
+{
+    display: block;
+}
+@media (max-width: 1000px)
+{
+    .content
+    {
+        font-size: 30px;
+        margin: 5px;
+        border-radius: 50px;
+    }
+    .SS
+    {
+        font-size: 35px;
+        font-weight: bold;
+    }
+}
+nav p
+{
+    justify-self: end;
+}
+nav
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    padding: 0 15px;
+}
+nav ul li a, nav ul li
+{
+    text-decoration: none; /*Убираем подчеркивание ссылок*/
+    color: #50facf; /* Цвет ссылок */
+}
+nav ul li a:hover, nav ul li:hover
+{
+    color: #ffffff;
+    /*background: #456cc7;*/
+}
+nav ul li ul li:hover
+{
+    background-color: #161616;
+}
+nav ul
+{
+    list-style: none; /* Убираем стилизацию маркеров */
+    padding: 0;
+}
+.footer
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+.inform ul li
+{
+    display: inline-block;
+}
+.inform ul li a
+{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    list-style: none;
+    display: inline-block;
+    border-radius: 50%;
+    border: solid indianred;
+    margin: 10px;
+    padding: 15px;
+}
+.inform ul li a p
+{
+    display: inline-block;
+    margin: 0;
+    align-items: center;
+}
+.inform ul li a
+{
+    text-decoration: none;
+}
+.source ul li, .source h3
+{
+    list-style: none;
+    margin: 15px;
+}
+.inform ul li a, .source ul li a
+{
+    color: #29468d;
+}
+.inform ul li a:hover
+{
+    border: solid #50facf;
+}
+.inform ul li a:hover, .source ul li a:hover
+{
+    color: #50facf;
+}
+footer
+{
+    margin: 0;
+    background-color: #161616;
+    color: #dcdada;
+    padding: 15px 15px;
+}
+@media (max-width: 1000px)
+{
+    .inform ul li a
+    {
+        width: 160px;
+        height: 160px;
+    }
+    .inform ul li a p
+    {
+        padding: 55px;
+    }
+    .inform, .source ul li, .source h3
+    {
+        font-size: 30px;
+    }
+    .source ul li img
+    {
+        width: 40px;
+        height: 40px;
+    }
+    nav
+    {
+        grid-template-columns: 1fr 2fr 1fr;
+        height: 100px;
+        align-items: center;
+    }
+    .navigation
+    {
+        margin: 0;
+        height: 100px;
+    }
+}
