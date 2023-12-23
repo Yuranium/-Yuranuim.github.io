@@ -1,6 +1,6 @@
 body
 {
-    background: url("../../../Website/Photos/UranusFon.png");
+    background: url("../../Photos/UranusFon.png");
     background-size: cover;
     background-attachment: fixed;
     -webkit-backdrop-filter: blur(10px);
