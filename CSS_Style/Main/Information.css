@@ -1,0 +1,44 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
+header nav ul li
+{
+    position: relative;
+    float: left;
+}
+.navigation ul li a, .navigation ul li ul li a
+{
+    display: block;
+}
+.navigation ul li ul
+{
+    position: absolute;
+    left: 0;
+    display: none;
+}
+.navigation ul li ul li
+{
+    border: 1px solid rgba(0, 0, 0.4);
+}
+.navigation ul li:hover > ul
+{
+    display: block;
+}
+body
+{
+    background-color: #cbc6c6;
+}
