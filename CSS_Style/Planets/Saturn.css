@@ -1,6 +1,6 @@
 body
 {
-    background: url("../../../Website/Photos/SaturnFon.png");
+    background: url("../../Photos/SaturnFon.png");
     background-size: cover;
     background-attachment: fixed;
     -webkit-backdrop-filter: blur(10px);
